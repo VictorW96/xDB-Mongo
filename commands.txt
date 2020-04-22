@@ -1,0 +1,7 @@
+docker exec -it mongodb bash
+mongo
+show dbs
+use students
+db.students.save({firstname:"Victor",lastname:"Wolf"})
+db.students.save({firstname:"Max",lastname:"Mustermann"})
+db.students.find({firstname:"Max"})
